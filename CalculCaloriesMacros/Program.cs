@@ -102,7 +102,7 @@ Console.WriteLine("Vos besoins caloriques journaliers sont de : " + besoinCalori
 
 // c. Calcul des macronutriments :
 
-// Pour calculer les macronutriments (protéines, lipides, glucides), il faut répartir les besoins caloriques journaliers en fonction des recommandations suivantes :
+// Pour calculer les macronutriments (protéines, lipides, glucides), il faut répartir les besoins caloriques journaliers en fonction des recommendations suivantes :
 
 //     Protéines : 15-25% des calories
 //     Lipides : 20-35% des calories
@@ -114,7 +114,7 @@ double proteines = 0;
 double lipides = 0;
 double glucides = 0;
 
-// Je fais le calcul des macronutriments en fonction des recommandations :
+// Je fais le calcul des macronutriments en fonction des recommendations :
 
 proteines = besoinCalories * 0.2;
 lipides = besoinCalories * 0.3;
@@ -126,6 +126,20 @@ Console.WriteLine("Vous devez consommer : ");
 Console.WriteLine("Protéines : " + proteines + " calories");
 Console.WriteLine("Lipides : " + lipides + " calories");
 Console.WriteLine("Glucides : " + glucides + " calories");
+
+// Je convertis les calories en grammes pour les macronutriments :
+
+proteines = proteines / 4;
+lipides = lipides / 9;
+glucides = glucides / 4;
+
+// J'affiche le résultat du calcul des macronutriments en grammes :
+
+Console.WriteLine("Soit en grammes : ");
+
+Console.WriteLine("Protéines : " + proteines + " g");
+Console.WriteLine("Lipides : " + lipides + " g");
+Console.WriteLine("Glucides : " + glucides + " g");
 
 // Je demande à l'utilisateur d'appuyer sur une touche pour fermer la console :
 

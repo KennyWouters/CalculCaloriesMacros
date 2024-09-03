@@ -1,1 +1,1 @@
-A basic calories / macros calculator
+A basic console calories / macros calculator
